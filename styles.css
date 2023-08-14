@@ -17,8 +17,8 @@ header {
 }
 
 .header h1 {
-    font-size: 28px;
-    margin-bottom: 10px;
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 
 .hero-section {
@@ -69,19 +69,36 @@ header {
 /* ... (previous product styles) ... */
 nav ul {
     list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+
 }
 
 nav li {
     display: inline;
-    margin: 0 15px;
+    margin: 0px;
+    text-align: center;
+    padding: 3px;
+    
 }
 nav a {
     color: #fff;
     font-weight: bold;
     transition: color 0.3s;
 }
+li a{
+    width: 0px;
+    padding: 0px 25px;
+}
+li a.active{
+    background-color: #fffcfc ;
+    color: #ff6f61;
+    
+}
 
-nav a:hover {
+nav a:hover:not(.active) {
+    background-color: crimson;
     color: #ffbbaf; /* Lighter pink on hover */
 }
 
